@@ -8,17 +8,10 @@ pipeline {
                 bat '"C:\\Users\\Angela\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m venv venv'
                 bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
             }
-        }
+        }        
         stage('Ejecutar script1') {
             steps {
                 echo "Ejecutando script 1..."
-                bat 'venv\\Scripts\\activate && python script.py'
-            }
-        }
-        
-        stage('Ejecutar script2') {
-            steps {
-                echo "Ejecutando script 2..."
                 bat 'venv\\Scripts\\activate && python proyecto.py'
             }
         }
