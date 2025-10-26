@@ -11,14 +11,14 @@ pipeline {
         }
         stage('Ejecutar script1') {
             steps {
-                echo "Ejecutando script principal..."
+                echo "Ejecutando script 1..."
                 bat 'venv\\Scripts\\activate && python numpy.py'
             }
         }
         
         stage('Ejecutar script2') {
             steps {
-                echo "Ejecutando script principal2..."
+                echo "Ejecutando script 2..."
                 bat 'venv\\Scripts\\activate && python proyecto.py'
             }
         }
