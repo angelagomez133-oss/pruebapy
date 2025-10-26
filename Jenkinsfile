@@ -9,10 +9,16 @@ pipeline {
                 bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
             }
         }
-
-        stage('Ejecutar script') {
+        stage('Ejecutar script1') {
             steps {
                 echo "Ejecutando script principal..."
+                bat 'venv\\Scripts\\activate && python numpy.py'
+            }
+        }
+        
+        stage('Ejecutar script2') {
+            steps {
+                echo "Ejecutando script principal2..."
                 bat 'venv\\Scripts\\activate && python proyecto.py'
             }
         }
