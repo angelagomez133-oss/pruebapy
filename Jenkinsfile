@@ -12,7 +12,7 @@ pipeline {
         stage('Ejecutar script1') {
             steps {
                 echo "Ejecutando script 1..."
-                bat 'venv\\Scripts\\activate && python numpy.py'
+                bat 'venv\\Scripts\\activate && python script.py'
             }
         }
         
