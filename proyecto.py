@@ -1,3 +1,4 @@
+pip install numpy
 import numpy as np
 
 #Se establece la temperatura en grados celcius del mes de 
